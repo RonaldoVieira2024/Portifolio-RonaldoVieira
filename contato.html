@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header>
+  <nav class="nav wrapper">
+    <!-- Nome como parte do domínio -->
+    <div class="brand">Ronaldo Gonçalves Vieira — Portfólio</div>
+    <div class="links">
+      <a data-nav href="index.html">Sobre mim</a>
+      <a data-nav href="formacao.html">Formação</a>
+      <a data-nav href="portfolio.html">Portfólio</a>
+      <a data-nav href="contato.html">Contato</a>
+    </div>
+  </nav>
+</header>
+
+  <main class="wrapper section">
+    <section class="card">
+      <h1>Contato</h1><p>Telefone: <a href="tel:+5541996897296">(41) 99689-7296</a> • E-mail: <a href="mailto:ronaldoctba2018@gmail.com">ronaldoctba2018@gmail.com</a></p>
+      <!--formulário somente visual (sem backend) -->
+      <form onsubmit="return false" aria-describedby="aviso">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" required placeholder="Digite seu nome">
+        
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" required placeholder="email@exemplo.com">
+        
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
+        
+        <button type="submit" title="Somente visual">Enviar</button>
+        <p id="aviso" class="muted">* Formulário ilustrativo para a atividade (sem envio real).</p>
+      </form>
+    </section>
+  </main>
+  <footer>
+  <!-- Rodapé -->
+  © <span id="ano"></span> • Feito com HTML5 + CSS puro • Publicado em hospedagem gratuita
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>

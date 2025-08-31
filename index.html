@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mim — Portfólio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav wrapper">
+      <div class="brand">Ronaldo Gonçalves Vieira — Portfólio</div>
+      <div class="links">
+        <a data-nav href="index.html">Sobre mim</a>
+        <a data-nav href="formacao.html">Formação</a>
+        <a data-nav href="portfolio.html">Portfólio</a>
+        <a data-nav href="contato.html">Contato</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrapper section">
+    <article class="card" style="display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:start">
+      <img src="assets/img/ronaldo.png" alt="Foto de Ronaldo Gonçalves Vieira" style="width:140px;height:140px;object-fit:cover;border-radius:16px;border:1px solid rgba(148,163,184,.25)">
+      <div>
+        <h1>Ronaldo Gonçalves Vieira</h1>
+        <p><strong>37 anos</strong> • <strong>Masculino</strong></p>
+        <p>Formado em <strong>Gestão da Produção Industrial</strong> e em <strong>Mecatrônica</strong>. Atualmente cursando <strong>Engenharia de Software</strong>.</p>
+        <p>Interesses: automação, melhoria de processos, tecnologia aplicada à indústria e desenvolvimento de software.</p>
+        <p><strong>Contato direto:</strong> <a href="tel:+5541996897296">(41) 99689-7296</a> • <a href="mailto:ronaldoctba2018@gmail.com">ronaldoctba2018@gmail.com</a></p>
+      </div>
+    </article>
+
+</main>
+  <footer>
+    © <span id="ano"></span> • Desenvolvido por Ronaldo Gonçalves Vieira • Portfólio Pessoal
+    <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
